@@ -8,7 +8,7 @@ export const BannerCard = () => {
         alt="avatar-image"
         width={112}
         height={112}
-        className="h-20 w-20 rounded-full border-2 border-dashed border-neutral-700 object-cover dark:border-neutral-300 sm:h-28 sm:w-28"
+        className="h-20 w-20 rounded-full border-3  border-neutral-700 object-cover dark:border-neutral-300 sm:h-28 sm:w-28"
       />
     </div>
   );

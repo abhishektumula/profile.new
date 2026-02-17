@@ -13,7 +13,7 @@ export const ModeToggler = () => {
     <div className="flex items-center justify-center">
       <button
         onClick={hadelThemeChange}
-        className="rounded-lg border border-black p-2 dark:border-white"
+        className="rounded-lg p-2 dark:border-white shadow-elevated dark:shadow-elevated-dark"
         aria-label="Toggle theme"
       >
         {theme === "dark" ? (
