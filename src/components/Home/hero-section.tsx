@@ -1,3 +1,5 @@
+import { PublicHandles } from "./handels";
+
 export const HeroSection = () => {
   const data =
     "I design and build smart web applications and AI-driven tools using Python, React, and modern technologies. Passionate about clean UI, scalable systems, and solving real-world problems through code.";
@@ -12,6 +14,9 @@ export const HeroSection = () => {
         </h1>
       </div>
       <div className="py-4">{data}</div>
+      <div className="py-2">
+        <PublicHandles />
+      </div>
     </div>
   );
 };
