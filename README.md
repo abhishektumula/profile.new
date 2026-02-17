@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a sleek profile of me.
+It's built with [Next.js](https://nextjs.org), [Framer Motion](https://www.framer.com/motion/), and provides a consistent design across the application.
+
+This project is bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
