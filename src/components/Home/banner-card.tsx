@@ -1,10 +1,14 @@
+import Image from "next/image";
+
 export const BannerCard = () => {
   return (
-    <div className="h-40 w-full flex flex-row items-center justify-start pl-12 pt-12 bordermt-4">
-      <img
+    <div className="flex h-32 w-full items-center justify-start px-4 pt-6 sm:h-40 sm:px-6 sm:pt-8">
+      <Image
         src="/profile.png"
         alt="avatar-image"
-        className="w-32 h-32 rounded-full  border-2 border-dashed border-neutral-700 dark:border-neutral-300"
+        width={112}
+        height={112}
+        className="h-20 w-20 rounded-full border-2 border-dashed border-neutral-700 object-cover dark:border-neutral-300 sm:h-28 sm:w-28"
       />
     </div>
   );

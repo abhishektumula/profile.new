@@ -7,19 +7,19 @@ export const ModeToggler = () => {
     const current = document.documentElement.classList.contains("dark")
       ? "light"
       : "dark";
-    console.log("theme change");
     setTheme(current);
   };
   return (
-    <div className="px-4 h-full  flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <button
         onClick={hadelThemeChange}
-        className="p-2 rounded-full border border-black dark:border-white"
+        className="rounded-lg border border-black p-2 dark:border-white"
+        aria-label="Toggle theme"
       >
         {theme === "dark" ? (
-          <IconSun size={24} className="text-white" />
+          <IconSun size={16} className="text-white sm:h-6 sm:w-6" />
         ) : (
-          <IconMoon size={24} className="text-black" />
+          <IconMoon size={16} className="text-black sm:h-6 sm:w-6" />
         )}
       </button>
     </div>

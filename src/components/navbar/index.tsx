@@ -1,56 +1,53 @@
 "use client";
+
+import Image from "next/image";
+import { useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { ModeToggler } from "./mode-toggle";
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import { p } from "motion/react-client";
+
 export const NavBar = () => {
   const { scrollYProgress } = useScroll();
   const [scroll, setScroll] = useState<boolean>(false);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    console.log(latest);
-    if (latest > 0.04) {
-      setScroll(true);
-    } else {
-      setScroll(false);
-    }
+    setScroll(latest > 0.04);
   });
-  const lists: string[] = ["experience", "projects", "blogs"];
+
+  const links: string[] = ["experience", "projects", "blogs"];
 
   return (
-    <div
-      className={`border border-red-900 pl-16 w-full h-24 flex flex-rows items-center justify-between p-2 bg-white dark:bg-black 
-        sticky top-0 ${scroll ? "bg-white/20 dark:bg-black/20 backdrop-blur-sm" : "opacity-100"}`}
+    <nav
+      className={`border border-none sticky top-0 z-50 flex h-28 w-full items-center justify-between border-b border-neutral-200 bg-white px-4 dark:border-neutral-800 dark:bg-black sm:px-6 ${
+        scroll ? "bg-white/40 backdrop-blur-sm dark:bg-black/40" : ""
+      }`}
     >
-      <div className="w-full h-full flex flex-row gap-4 pt-2">
-        <div className="w-16 h-16">
-          <img
+      <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4">
+        <div className="shrink-0">
+          <Image
             src="/profile.png"
-            alt=""
-            className="w-full h-full rounded-xl border-2 border-neutral-300 dark:border-neutral-700"
+            alt="avatar-image"
+            width={24}
+            height={24}
+            className="h-12 w-12 rounded-md object-cover sm:h-16 sm:w-16"
+            priority
           />
         </div>
-        <div className="flex flex-row items-end justify-start gap-4 p-2">
-          {lists.map((each, idx) => (
-            <p className="text-sm hover:underline cursor-pointer" key={idx}>
-              {each}
+
+        <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1 sm:gap-x-4">
+          {links.map((item) => (
+            <p
+              className="cursor-pointer text-xs capitalize text-neutral-800 hover:underline dark:text-neutral-100 sm:text-sm"
+              key={item}
+            >
+              {item}
             </p>
           ))}
         </div>
       </div>
-      <div>
+
+      <div className="ml-3 shrink-0">
         <ModeToggler />
       </div>
-    </div>
+    </nav>
   );
 };
-
-{
-  /* <h1 className="text-3xl font-bold text-black dark:text-white">
-          Abhishek Tumula
-        </h1>
-        <p className="text-md text-neutral-600 dark:text-neutral-500">
-          A Full stack Web Developer
-        </p> */
-}
