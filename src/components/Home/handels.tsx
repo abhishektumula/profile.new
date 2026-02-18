@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import { IconSend, IconSend2 } from "@tabler/icons-react";
 type handles = {
   title: string;
   href: string;
@@ -13,7 +14,6 @@ import {
   IconBrandGithub,
   IconBrandInstagram,
 } from "@tabler/icons-react";
-import { redirect } from "next/navigation";
 export const PublicHandles = () => {
   const [hover, setHover] = useState<number | null>(null);
   const links: handles[] = [
@@ -21,19 +21,19 @@ export const PublicHandles = () => {
       title: "x",
       href: "https://x.com/dammmhmmm",
       access: true,
-      icon: <IconBrandTwitter />,
+      icon: <IconBrandTwitter size={24} />,
     },
     {
       title: "Instagram",
       href: "https://instagram.com/",
       access: false,
-      icon: <IconBrandInstagram />,
+      icon: <IconBrandInstagram size={24} />,
     },
     {
       title: "Github",
       href: "https://github.com/abhishektumula",
       access: true,
-      icon: <IconBrandGithub />,
+      icon: <IconBrandGithub size={24} />,
     },
   ];
 
@@ -61,6 +61,16 @@ export const PublicHandles = () => {
           </motion.a>
         </motion.div>
       ))}
+      <div className="flex flex-row items-center justify-center gap-2 px-2 py-1 rounded-md bg-neutral-900 dark:bg-neutral-200 text-white dark:text-black shadow-elevated dark:shadow-elevated-dark">
+        <IconSend size={20} className="" />
+        <button className="p-1 text-sm">
+          <h1 className="text-sm tracking-tight">Get in touch</h1>
+        </button>
+      </div>
+      <div className="flex flex-row items-center justify-center gap-2 px-2 py-1 rounded-md bg-neutral-200 dark:bg-neutral-900 text-black dark:text-white shadow-elevated dark:shadow-elevated-dark">
+        <IconSend size={20} className="" />
+        <button className="p-1 text-sm">Resume</button>
+      </div>
     </div>
   );
 };

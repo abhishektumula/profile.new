@@ -13,7 +13,7 @@ export const HeroSection = () => {
           </span>
         </h1>
       </div>
-      <div className="py-4">{data}</div>
+      <div className="py-4 text-neutral-500">{data}</div>
       <div className="py-2">
         <PublicHandles />
       </div>

@@ -11,7 +11,6 @@ This project serves as a personal profile showcasing my skills and projects. It'
 - **Animation:** Framer Motion (explicitly mentioned in original README)
 - **Language:** TypeScript (implied by `tsconfig.json` and `.ts` files)
 
-
 It's built with [Next.js](https://nextjs.org), [Framer Motion](https://www.framer.com/motion/), and provides a consistent design across the application.
 
 This project is bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
