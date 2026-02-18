@@ -1,8 +1,16 @@
 "use client";
 import { IconSun, IconMoon } from "@tabler/icons-react";
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 export const ModeToggler = () => {
   const { theme, setTheme } = useTheme();
+  const [mount, setMount] = useState(false);
+
+  useEffect(() => {
+    setMount(true);
+  });
+
+  if (!mount) return null;
   const hadelThemeChange = () => {
     const current = document.documentElement.classList.contains("dark")
       ? "light"
