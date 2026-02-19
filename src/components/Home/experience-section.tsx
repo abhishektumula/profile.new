@@ -11,6 +11,12 @@ export const ExperienceBlock = () => {
     setExpand((prev) => (prev === idx ? null : idx));
   };
 
+  const toBullets = (text: string) =>
+    text
+      .split(/(?<=[.!?])\s+/)
+      .map((line) => line.trim())
+      .filter(Boolean);
+
   return (
     <div className="w-full px-4 sm:px-6 pt-4 sm:pt-8">
       <p className="text-neutral-500 text-md font-semibold">Featured</p>
@@ -28,7 +34,8 @@ export const ExperienceBlock = () => {
             {expand === idx ? (
               <motion.div
                 layoutId="experience-active-card"
-                className="pointer-events-none absolute inset-0 bg-gradient-to-r from-blue-500/10 via-cyan-400/8 to-emerald-400/10"
+                className="pointer-events-none absolute inset-0 "
+                // bg-linear-to-r from-blue-500/10 via-cyan-400/8 to-emerald-400/10 => add this line to give the gradinet background for the Experiecn
               />
             ) : null}
 
@@ -80,7 +87,11 @@ export const ExperienceBlock = () => {
                     layoutId="experience-description"
                     className="px-4 pb-4 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300"
                   >
-                    {each.description}
+                    <ul className="list-disc space-y-1.5 pl-5 marker:text-sky-500 dark:marker:text-sky-400">
+                      {toBullets(each.description).map((point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
                   </motion.div>
                 </motion.div>
               ) : null}
