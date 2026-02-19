@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { ModeToggler } from "./mode-toggle";
@@ -13,7 +14,11 @@ export const NavBar = () => {
     setScroll(latest > 0.04);
   });
 
-  const links: string[] = ["experience", "projects", "blogs"];
+  const links = [
+    { label: "experience", href: "/experience" },
+    { label: "projects", href: "/projects" },
+    { label: "blogs", href: "/blogs" },
+  ];
 
   return (
     <nav
@@ -23,24 +28,27 @@ export const NavBar = () => {
     >
       <div className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4">
         <div className="shrink-0">
-          <Image
-            src="/profile.png"
-            alt="avatar-image"
-            width={24}
-            height={24}
-            className="h-12 w-12 rounded-md object-cover sm:h-16 sm:w-16"
-            priority
-          />
+          <Link href="/" aria-label="Go to home">
+            <Image
+              src="/profile.png"
+              alt="avatar-image"
+              width={24}
+              height={24}
+              className="h-12 w-12 rounded-md object-cover sm:h-16 sm:w-16"
+              priority
+            />
+          </Link>
         </div>
 
         <div className="flex min-w-0 flex-wrap items-center gap-x-3 gap-y-1 sm:gap-x-4">
           {links.map((item) => (
-            <p
+            <Link
+              href={item.href}
               className="cursor-pointer text-xs capitalize text-neutral-800 hover:underline dark:text-neutral-100 sm:text-sm"
-              key={item}
+              key={item.label}
             >
-              {item}
-            </p>
+              {item.label}
+            </Link>
           ))}
         </div>
       </div>

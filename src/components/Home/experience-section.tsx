@@ -5,7 +5,7 @@ import { experienceData } from "@/lib/data";
 import { AnimatePresence, motion } from "motion/react";
 
 export const ExperienceBlock = () => {
-  const [expand, setExpand] = useState<number | null>(null);
+  const [expand, setExpand] = useState<number | null>(0);
 
   const onToggle = (idx: number) => {
     setExpand((prev) => (prev === idx ? null : idx));
