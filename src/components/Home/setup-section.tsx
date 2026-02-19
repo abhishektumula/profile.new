@@ -55,7 +55,7 @@ export const SetupSection = () => {
             Terminal dotfiles and command-line setup.
           </p>
           <a
-            href={TERMINAL_SETUP_URL}
+            href={"https://github.com/abhishektumula/dotfiles.git"}
             target="_blank"
             rel="noreferrer"
             className="mt-4 inline-flex items-center gap-1 rounded-md border border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-800 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-not-allowed"
@@ -80,7 +80,7 @@ export const SetupSection = () => {
           </p>
           <div className="pt-4 flex flex-wrap items-center gap-2">
             <a
-              href={TERMINAL_SETUP_URL}
+              href={"https://github.com/abhishektumula/dotfiles.git"}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1 rounded-md border border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-800 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-not-allowed"
