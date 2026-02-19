@@ -5,6 +5,7 @@ import { ExperienceBlock } from "./experience-section";
 import { HeroSection } from "./hero-section";
 import { ProjectSection } from "./project-section";
 import { RandomQuoteCard } from "../random-quote-card";
+import { SetupSection } from "./setup-section";
 export const Home = () => {
   return (
     <div className="w-full min-h-[200vh] bg-white dark:bg-black text-black dark:text-white">
@@ -14,6 +15,7 @@ export const Home = () => {
       <AboutSection />
       <ProjectSection limit={3} columns={2} showAllButton />
       <ExperienceBlock />
+      <SetupSection />
       <RandomQuoteCard />
     </div>
   );
