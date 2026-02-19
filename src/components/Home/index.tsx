@@ -1,5 +1,6 @@
 import { NavBar } from "../navbar";
 import { BannerCard } from "./banner-card";
+import { ExperienceBlock } from "./experience-section";
 import { HeroSection } from "./hero-section";
 export const Home = () => {
   return (
@@ -7,6 +8,7 @@ export const Home = () => {
       <NavBar />
       <BannerCard />
       <HeroSection />
+      <ExperienceBlock />
     </div>
   );
 };
