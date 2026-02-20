@@ -94,7 +94,7 @@ export default function BlogsPage() {
                 whileTap={{ scale: 0.99 }}
                 className="w-full overflow-hidden rounded-xl border border-neutral-200/80 bg-white/80 shadow-md transition duration-300 hover:shadow-xl dark:border-neutral-800 dark:bg-neutral-950/70"
               >
-                <div className="relative aspect-[16/9] w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900">
+                <div className="relative aspect-video w-full overflow-hidden bg-neutral-100 dark:bg-neutral-900">
                   <Image
                     src={blogPost.cover}
                     alt={blogPost.title}
@@ -102,7 +102,7 @@ export default function BlogsPage() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent dark:from-black/40" />
+                  <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent dark:from-black/40" />
                 </div>
                 <div className="space-y-5 p-4 sm:p-5">
                   <h2 className="text-2xl font-semibold leading-tight tracking-tight text-neutral-900 dark:text-neutral-100">
