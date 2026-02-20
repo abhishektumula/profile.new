@@ -34,7 +34,7 @@ export const SetupSection = () => {
           </p>
           <Link
             href="/gear"
-            className="mt-4 inline-flex items-center gap-1 rounded-md border border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-800 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-not-allowed"
+            className="mt-4 inline-flex items-center gap-1 rounded-md border border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-800 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-pointer"
           >
             Open Gear
             <IconExternalLink size={13} />
@@ -58,7 +58,7 @@ export const SetupSection = () => {
             href={"https://github.com/abhishektumula/dotfiles.git"}
             target="_blank"
             rel="noreferrer"
-            className="mt-4 inline-flex items-center gap-1 rounded-md border border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-800 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-not-allowed"
+            className="mt-4 inline-flex items-center gap-1 rounded-md border border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-800 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-pointer"
           >
             Open Terminal Setup
             <IconExternalLink size={13} />
@@ -83,7 +83,7 @@ export const SetupSection = () => {
               href={"https://github.com/abhishektumula/dotfiles.git"}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1 rounded-md border border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-800 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-not-allowed"
+              className="inline-flex items-center gap-1 rounded-md border border-neutral-300 px-3 py-1.5 text-xs font-medium text-neutral-800 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-pointer"
             >
               Terminal Setup Repo
               <IconExternalLink size={13} />

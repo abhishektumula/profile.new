@@ -71,16 +71,17 @@ export const PublicHandles = () => {
 export const CTA = () => {
   return (
     <div className="flex flex-row items-center justify-center gap-4">
-      <div className="flex flex-row items-center justify-center gap-2 px-2 py-1 rounded-md bg-neutral-900 dark:bg-neutral-200 text-white dark:text-black shadow-md ring-1 ring-neutral-200/60 transition hover:shadow-lg dark:ring-neutral-700/70">
+      <a
+        href="mailto:abhishektumula.in@gmail.com"
+        className="flex flex-row items-center justify-center gap-2 rounded-md bg-neutral-900 px-2 py-1 text-white shadow-md ring-1 ring-neutral-200/60 transition hover:shadow-lg dark:bg-neutral-200 dark:text-black dark:ring-neutral-700/70"
+      >
         <IconSend size={20} className="" />
-        <button className="p-1 text-sm">
-          <h1 className="text-sm tracking-tight">Get in touch</h1>
-        </button>
-      </div>
-      <div className="flex flex-row items-center justify-center gap-2 px-2 py-1 rounded-md bg-neutral-200 dark:bg-neutral-900 text-black dark:text-white shadow-md ring-1 ring-neutral-200/60 transition hover:shadow-lg dark:ring-neutral-700/70">
+        <span className="p-1 text-sm tracking-tight">Get in touch</span>
+      </a>
+      {/* <div className="flex flex-row items-center justify-center gap-2 px-2 py-1 rounded-md bg-neutral-200 dark:bg-neutral-900 text-black dark:text-white shadow-md ring-1 ring-neutral-200/60 transition hover:shadow-lg dark:ring-neutral-700/70">
         <IconSend size={20} className="" />
         <button className="p-1 text-sm">Resume</button>
-      </div>
+      </div> */}
     </div>
   );
 };
