@@ -108,23 +108,27 @@ export const ProjectSection = ({
             key={project.title}
             className="w-full rounded-xl border border-neutral-200/80 bg-white/80 p-4 sm:p-5 shadow-md transition duration-300 hover:shadow-xl dark:border-neutral-800 dark:bg-neutral-950/70"
           >
-            <div className="flex items-start justify-between gap-3">
-              <div className="flex items-center gap-2">
-                <h3 className="text-2xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+              <div className="flex min-w-0 items-start gap-2">
+                <h3 className="min-w-0 break-words text-2xl font-semibold leading-tight tracking-tight text-neutral-900 dark:text-neutral-100">
                   {project.title}
                 </h3>
                 <a
-                  href={project.siteUrl.trim().length > 0 ? project.siteUrl : project.repoUrl}
+                  href={
+                    project.siteUrl.trim().length > 0
+                      ? project.siteUrl
+                      : project.repoUrl
+                  }
                   target="_blank"
                   rel="noreferrer"
                   aria-label={`${project.title} project link`}
-                  className="text-neutral-600 transition hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100"
+                  className="mt-1 shrink-0 text-neutral-600 transition hover:text-neutral-900 dark:text-neutral-300 dark:hover:text-neutral-100"
                 >
                   <IconExternalLink size={16} />
                 </a>
               </div>
 
-              <div className="flex items-center gap-2 shrink-0">
+              <div className="flex shrink-0 flex-wrap items-center gap-2">
                 <a
                   href={project.repoUrl}
                   target="_blank"

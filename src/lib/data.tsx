@@ -35,6 +35,14 @@ export type ProjectDetail = {
 
 export const projectDetails: ProjectDetail[] = [
   {
+    title: "Minimal Profile",
+    description:
+      "A minimal portfolio/profile template that is build using nextJs, motion, tailwindcss.A reusable portfolio template with Light and dark mode toggle Neutral Tailwind color system",
+    repoUrl: "https;//github.com/abhishektumula/profile.git",
+    siteUrl: "https://profile-kohl-xi-27.vercel.app",
+    technologies: ["nextjs", "typescript"],
+  },
+  {
     title: "Comet",
     description:
       "Comet is an AI-powered call agent designed to automate customer outreach and convert leads into paying customers. It intelligently interacts with users, evaluates responses in real time, and generates structured reports for administrators. The system focuses on improving lead qualification, automating follow-ups, and increasing conversion rates through smart AI-driven communication workflows.",

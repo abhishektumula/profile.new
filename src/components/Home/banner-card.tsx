@@ -32,6 +32,7 @@ export const BannerCard = ({ title, description }: BannerCardProps) => {
         alt="avatar-image"
         width={112}
         height={112}
+        loading="eager"
         className="h-20 w-20 rounded-full border-3  border-neutral-700 object-cover dark:border-neutral-300 sm:h-28 sm:w-28"
       />
     </div>
