@@ -71,7 +71,7 @@ export const projectDetails: ProjectDetail[] = [
     description:
       "TweetBox is a lightweight microblogging-style application that allows users to post and interact with short-form content. The project focuses on implementing CRUD operations, responsive UI components, and basic content management workflows while maintaining a clean and intuitive interface.",
     repoUrl: "https://github.com/abhishektumula/TweetBox.git",
-    siteUrl: "",
+    siteUrl: "https://github.com/abhishektumula/TweetBox.git",
     technologies: ["react", "nodejs", "mongodb", "tailwind"],
   },
   {
@@ -79,7 +79,7 @@ export const projectDetails: ProjectDetail[] = [
     description:
       "FunProject is an experimental application built to explore creative frontend concepts and interactive UI features. It focuses on implementing dynamic components, animations, and engaging user interactions while improving hands-on experience with modern web technologies.",
     repoUrl: "https://github.com/abhishektumula/funP.git",
-    siteUrl: "",
+    siteUrl: "htpps://github.com/abhishektumula",
     technologies: ["javascript", "react", "css"],
   },
   {
@@ -87,7 +87,7 @@ export const projectDetails: ProjectDetail[] = [
     description:
       "A freelance project developed for an interior design client to showcase services, portfolio work, and contact information. The application emphasizes modern design aesthetics, responsive layouts, and smooth navigation to create a visually appealing and professional online presence for the business.",
     repoUrl: "https://github.com/abhishektumula/FLP-1.git",
-    siteUrl: "",
+    siteUrl: "https://sreeja-interiors.vercel.app",
     technologies: ["react", "nextjs", "tailwind", "typescript"],
   },
 ];
