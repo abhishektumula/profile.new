@@ -2,6 +2,7 @@ import { Container } from "@/components/container";
 import { ExperienceBlock } from "@/components/Home/experience-section";
 import { NavBar } from "@/components/navbar";
 import { RandomQuoteCard } from "@/components/random-quote-card";
+import { SiteFooter } from "@/components/site-footer";
 
 export default function ExperiencePage() {
   return (
@@ -21,6 +22,7 @@ export default function ExperiencePage() {
         <ExperienceBlock />
         <RandomQuoteCard />
       </Container>
+      <SiteFooter />
     </div>
   );
 }

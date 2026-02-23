@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Container } from "@/components/container";
 import { NavBar } from "@/components/navbar";
 import { RandomQuoteCard } from "@/components/random-quote-card";
+import { SiteFooter } from "@/components/site-footer";
 import { IconArrowRight, IconCalendarEvent } from "@tabler/icons-react";
 import { motion } from "motion/react";
 
@@ -155,6 +156,7 @@ export default function BlogsPage() {
         </motion.section>
         <RandomQuoteCard />
       </Container>
+      <SiteFooter />
     </div>
   );
 }

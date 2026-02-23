@@ -5,6 +5,7 @@ import { NavBar } from "@/components/navbar";
 import { motion } from "motion/react";
 import { IconSettings } from "@tabler/icons-react";
 import { RandomQuoteCard } from "@/components/random-quote-card";
+import { SiteFooter } from "@/components/site-footer";
 
 const gearItems = [
   "Mac book pro 14 inch M5 chip",
@@ -63,6 +64,7 @@ export default function GearPage() {
         </section>
         <RandomQuoteCard />
       </Container>
+      <SiteFooter />
     </div>
   );
 }

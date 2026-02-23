@@ -2,6 +2,7 @@ import { Container } from "@/components/container";
 import { ProjectSection } from "@/components/Home/project-section";
 import { NavBar } from "@/components/navbar";
 import { RandomQuoteCard } from "@/components/random-quote-card";
+import { SiteFooter } from "@/components/site-footer";
 
 export default function ProjectsPage() {
   return (
@@ -21,6 +22,7 @@ export default function ProjectsPage() {
         <ProjectSection columns={2} />
         <RandomQuoteCard />
       </Container>
+      <SiteFooter />
     </div>
   );
 }
