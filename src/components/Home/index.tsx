@@ -40,9 +40,7 @@ export const Home = () => {
       variants={containerVariants}
       className="w-full min-h-[200vh] bg-white dark:bg-black text-black dark:text-white"
     >
-      <motion.div variants={itemVariants}>
-        <NavBar />
-      </motion.div>
+      <NavBar />
       <motion.div variants={itemVariants}>
         <BannerCard />
       </motion.div>

@@ -19,6 +19,9 @@ const cursorBits = [
 export const CursorFollower = () => {
   const [cursorBit, setCursorBit] = useState(cursorBits[0]);
   const indexRef = useRef(0);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       indexRef.current = (indexRef.current + 1) % cursorBits.length;
@@ -29,8 +32,6 @@ export const CursorFollower = () => {
       clearInterval(intervalId);
     };
   }, []);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
 
   const springX = useSpring(mouseX, { stiffness: 300, damping: 30 });
   const springY = useSpring(mouseY, { stiffness: 300, damping: 30 });
