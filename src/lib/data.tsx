@@ -31,6 +31,7 @@ export type ProjectDetail = {
   repoUrl: string;
   siteUrl: string;
   technologies: string[];
+  deployed?: boolean;
 };
 
 export const projectDetails: ProjectDetail[] = [
