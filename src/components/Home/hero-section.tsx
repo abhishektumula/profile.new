@@ -7,7 +7,7 @@ export const HeroSection = () => {
     <div className="w-full max-w-2xl px-4 pt-4 text-base font-medium text-neutral-800 dark:text-neutral-200 sm:px-6 sm:pt-6 sm:text-lg">
       <div className="w-full">
         <h1 className="text-4xl w-full">
-          Hi,I'm Abhi {""}
+          Hi, I&apos;m Abhi{" "}
           <span className="text-xl text-neutral-600 dark:text-neutral-600">
             -Full Stack Web Developer
           </span>

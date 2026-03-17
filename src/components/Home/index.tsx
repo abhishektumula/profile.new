@@ -6,6 +6,7 @@ import { BannerCard } from "./banner-card";
 import { ExperienceBlock } from "./experience-section";
 import { HeroSection } from "./hero-section";
 import { ProjectSection } from "./project-section";
+import { GithubHeatmapSection } from "./github-heatmap-section";
 import { RandomQuoteCard } from "../random-quote-card";
 import { SetupSection } from "./setup-section";
 import { motion } from "motion/react";
@@ -55,6 +56,15 @@ export const Home = () => {
         transition={smoothTransition}
       >
         <AboutSection />
+      </motion.div>
+      <motion.div
+        variants={itemVariants}
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={smoothTransition}
+      >
+        <GithubHeatmapSection />
       </motion.div>
       <motion.div
         variants={itemVariants}

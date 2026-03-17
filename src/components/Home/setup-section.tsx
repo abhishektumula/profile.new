@@ -6,7 +6,6 @@ import {
 } from "@tabler/icons-react";
 import Link from "next/link";
 
-const TERMINAL_SETUP_URL = "https://github.com/abhishektumula/terminal-setup";
 const EDITOR_SETUP_URL =
   "https://github.com/abhishektumula/terminal-setup#editor-setup";
 

@@ -1,26 +1,27 @@
 "use client";
 import { IconSun, IconMoon } from "@tabler/icons-react";
-import { useState, useEffect } from "react";
+import { useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
+
+const emptySubscribe = () => () => {};
+
 export const ModeToggler = () => {
   const { theme, setTheme } = useTheme();
-  const [mount, setMount] = useState(false);
-
-  useEffect(() => {
-    setMount(true);
-  });
+  const mount = useSyncExternalStore(emptySubscribe, () => true, () => false);
 
   if (!mount) return null;
-  const hadelThemeChange = () => {
+
+  const handleThemeChange = () => {
     const current = document.documentElement.classList.contains("dark")
       ? "light"
       : "dark";
     setTheme(current);
   };
+
   return (
     <div className="flex items-center justify-center">
       <button
-        onClick={hadelThemeChange}
+        onClick={handleThemeChange}
         className="rounded-lg p-2 dark:border-white shadow-elevated dark:shadow-elevated-dark"
         aria-label="Toggle theme"
       >
