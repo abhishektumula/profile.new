@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { CursorFollower } from "@/components/cursor-follower";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
@@ -78,6 +79,7 @@ export default function RootLayout({
         className={`${interSans.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
+          <CursorFollower />
           {children}
         </ThemeProvider>
       </body>

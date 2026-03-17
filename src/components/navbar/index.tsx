@@ -18,6 +18,7 @@ export const NavBar = () => {
     { label: "experience", href: "/experience" },
     { label: "projects", href: "/projects" },
     { label: "blogs", href: "/blogs" },
+    { label: "showcase", href: "/showcase" },
   ];
 
   return (
