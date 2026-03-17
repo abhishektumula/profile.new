@@ -19,7 +19,7 @@ export default function BlogsPage() {
       title:
         "Why Modern Software Sucks and What It Says About Our Tech Culture",
       href: "https://medium.com/@abhishektumula.in/why-modern-software-sucks-and-what-it-says-about-our-tech-culture-63704acc8dfa",
-      cover: "/download.png",
+      cover: "/profile.png",
       excerpt:
         "There is a creeping feeling in tech that software is no longer what it used to be. This piece unpacks why.",
       tags: ["Culture", "Software", "Tech", "+1 more"],
@@ -28,7 +28,7 @@ export default function BlogsPage() {
     {
       title: "Building Fast UIs with Next.js and Tailwind",
       href: "https://medium.com/",
-      cover: "/demo.png",
+      cover: "/profile.png",
       excerpt:
         "A practical guide to composing clean UI systems and improving perceived performance in production apps.",
       tags: ["Frontend", "Next.js", "Tailwind", "+1 more"],
@@ -37,7 +37,7 @@ export default function BlogsPage() {
     {
       title: "What I Learned from Shipping Side Projects",
       href: "https://medium.com/",
-      cover: "/demo.png",
+      cover: "/profile.png",
       excerpt:
         "Lessons on scope, iteration speed, and building products people actually use.",
       tags: ["Projects", "Product", "Career", "+1 more"],
